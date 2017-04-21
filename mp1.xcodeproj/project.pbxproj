@@ -6,6 +6,16 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		26CAED501EAA126F00976F5E /* MP1Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CAED3A1EAA126F00976F5E /* MP1Node.cpp */; };
+		26CAED511EAA126F00976F5E /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CAED421EAA126F00976F5E /* Log.cpp */; };
+		26CAED521EAA126F00976F5E /* Member.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CAED431EAA126F00976F5E /* Member.cpp */; };
+		26CAED531EAA126F00976F5E /* Params.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CAED441EAA126F00976F5E /* Params.cpp */; };
+		26CAED541EAA126F00976F5E /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CAED4A1EAA126F00976F5E /* Application.cpp */; };
+		26CAED551EAA126F00976F5E /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 26CAED4D1EAA126F00976F5E /* Makefile */; };
+		26CAED561EAA126F00976F5E /* EmulNet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CAED4F1EAA126F00976F5E /* EmulNet.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		26CAED2E1EAA118C00976F5E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,6 +30,28 @@
 
 /* Begin PBXFileReference section */
 		26CAED301EAA118C00976F5E /* mp1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mp1; sourceTree = BUILT_PRODUCTS_DIR; };
+		26CAED3A1EAA126F00976F5E /* MP1Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MP1Node.cpp; sourceTree = "<group>"; };
+		26CAED3C1EAA126F00976F5E /* msgdropsinglefailure.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = msgdropsinglefailure.conf; sourceTree = "<group>"; };
+		26CAED3D1EAA126F00976F5E /* multifailure.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = multifailure.conf; sourceTree = "<group>"; };
+		26CAED3E1EAA126F00976F5E /* singlefailure.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = singlefailure.conf; sourceTree = "<group>"; };
+		26CAED3F1EAA126F00976F5E /* Grader.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = Grader.sh; sourceTree = "<group>"; };
+		26CAED401EAA126F00976F5E /* run.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = run.sh; sourceTree = "<group>"; };
+		26CAED411EAA126F00976F5E /* submit.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = submit.py; sourceTree = "<group>"; };
+		26CAED421EAA126F00976F5E /* Log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Log.cpp; sourceTree = "<group>"; };
+		26CAED431EAA126F00976F5E /* Member.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Member.cpp; sourceTree = "<group>"; };
+		26CAED441EAA126F00976F5E /* Params.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Params.cpp; sourceTree = "<group>"; };
+		26CAED451EAA126F00976F5E /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		26CAED461EAA126F00976F5E /* EmulNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmulNet.h; sourceTree = "<group>"; };
+		26CAED471EAA126F00976F5E /* Member.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Member.h; sourceTree = "<group>"; };
+		26CAED481EAA126F00976F5E /* MP1Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MP1Node.h; sourceTree = "<group>"; };
+		26CAED491EAA126F00976F5E /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
+		26CAED4A1EAA126F00976F5E /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
+		26CAED4B1EAA126F00976F5E /* Params.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Params.h; sourceTree = "<group>"; };
+		26CAED4C1EAA126F00976F5E /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		26CAED4D1EAA126F00976F5E /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		26CAED4E1EAA126F00976F5E /* stdincludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdincludes.h; sourceTree = "<group>"; };
+		26CAED4F1EAA126F00976F5E /* EmulNet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EmulNet.cpp; sourceTree = "<group>"; };
+		26CAED581EAA12C900976F5E /* mp1_specifications.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mp1_specifications.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +84,46 @@
 		26CAED321EAA118C00976F5E /* mp1 */ = {
 			isa = PBXGroup;
 			children = (
+				26CAED571EAA128000976F5E /* docs */,
+				26CAED3A1EAA126F00976F5E /* MP1Node.cpp */,
+				26CAED3B1EAA126F00976F5E /* testcases */,
+				26CAED3F1EAA126F00976F5E /* Grader.sh */,
+				26CAED401EAA126F00976F5E /* run.sh */,
+				26CAED411EAA126F00976F5E /* submit.py */,
+				26CAED421EAA126F00976F5E /* Log.cpp */,
+				26CAED431EAA126F00976F5E /* Member.cpp */,
+				26CAED441EAA126F00976F5E /* Params.cpp */,
+				26CAED451EAA126F00976F5E /* Queue.h */,
+				26CAED461EAA126F00976F5E /* EmulNet.h */,
+				26CAED471EAA126F00976F5E /* Member.h */,
+				26CAED481EAA126F00976F5E /* MP1Node.h */,
+				26CAED491EAA126F00976F5E /* Application.h */,
+				26CAED4A1EAA126F00976F5E /* Application.cpp */,
+				26CAED4B1EAA126F00976F5E /* Params.h */,
+				26CAED4C1EAA126F00976F5E /* Log.h */,
+				26CAED4D1EAA126F00976F5E /* Makefile */,
+				26CAED4E1EAA126F00976F5E /* stdincludes.h */,
+				26CAED4F1EAA126F00976F5E /* EmulNet.cpp */,
 			);
 			path = mp1;
+			sourceTree = "<group>";
+		};
+		26CAED3B1EAA126F00976F5E /* testcases */ = {
+			isa = PBXGroup;
+			children = (
+				26CAED3C1EAA126F00976F5E /* msgdropsinglefailure.conf */,
+				26CAED3D1EAA126F00976F5E /* multifailure.conf */,
+				26CAED3E1EAA126F00976F5E /* singlefailure.conf */,
+			);
+			path = testcases;
+			sourceTree = "<group>";
+		};
+		26CAED571EAA128000976F5E /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				26CAED581EAA12C900976F5E /* mp1_specifications.pdf */,
+			);
+			name = docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +183,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26CAED551EAA126F00976F5E /* Makefile in Sources */,
+				26CAED561EAA126F00976F5E /* EmulNet.cpp in Sources */,
+				26CAED521EAA126F00976F5E /* Member.cpp in Sources */,
+				26CAED511EAA126F00976F5E /* Log.cpp in Sources */,
+				26CAED541EAA126F00976F5E /* Application.cpp in Sources */,
+				26CAED501EAA126F00976F5E /* MP1Node.cpp in Sources */,
+				26CAED531EAA126F00976F5E /* Params.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
