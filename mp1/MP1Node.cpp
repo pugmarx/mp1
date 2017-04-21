@@ -163,7 +163,7 @@ int MP1Node::finishUpThisNode(){
    #ifdef DEBUGLOG
         printf("%s \n", "In finishUpThisNode...finishing Up");
     #endif
-    //return 1;
+    return 1;
 }
 
 /**
@@ -219,6 +219,27 @@ bool MP1Node::recvCallBack(void *env, char *data, int size ) {
 	#ifdef DEBUGLOG
         printf("%s \n", "in recvCallBack...will handle different types of msgs here ...");
     #endif
+    
+    //detect the message type and act on it!
+    
+    MessageHdr* msgHeader = (MessageHdr*) data;
+    MsgTypes msgType = msgHeader->msgType;
+    
+    switch(msgType){
+    
+        case JOINREQ:
+            #ifdef DEBUGLOG
+                cout << " **** Received JOINREQ " << msgType << endl;
+                //log->LOG(msgType, "***** RECEIVED JOINREQ");
+            #endif
+            break;
+        default:
+            #ifdef DEBUGLOG
+                cout << "**** Received OTHER " << msgType << endl;
+            #endif
+            
+    }
+    
     return false;
 }
 
@@ -269,6 +290,11 @@ Address MP1Node::getJoinAddress() {
  */
 void MP1Node::initMemberListTable(Member *memberNode) {
 	memberNode->memberList.clear();
+}
+
+void MP1Node::addToMemberList(int id, short port, Member *memberNode){
+    MemberListEntry memListEntry = MemberListEntry(id, port, par->getcurrtime(), memberNode->heartbeat);
+    memberNode->memberList.push_back(memListEntry);
 }
 
 /**
